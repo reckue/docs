@@ -1,0 +1,1 @@
+# Issue creation rules
