@@ -1,7 +1,8 @@
 # Architecture
 
-1. Account
+1. [account-api](https://github.com/reckue/account-api)
 - Models
-
-2. Post
+- Releases
+2. [post-api](https://github.com/reckue/post-api)
 - Models
+- Releases
