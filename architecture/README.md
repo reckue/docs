@@ -1,7 +1,7 @@
 # Architecture
 
 ### account-api
-- Models
+- [Models](https://reckue.github.io/docs/architecture/post-api/models)
 - Releases
 
 ### post-api
