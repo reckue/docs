@@ -62,6 +62,11 @@ status:
 
 ### Create deployment
 ```bash
+oc create -f config/k8s/deploy.yaml
+```
+
+### Create deployment with docker image
+```bash
 kubectl create deployment post --image=reckue/post:latest --dry-run -o=yaml > deployment.yaml
 ```
 
