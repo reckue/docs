@@ -1,4 +1,4 @@
-## Rules for creating an issue.
+## Rules for creating an issue
 
 
 #### Key points:
