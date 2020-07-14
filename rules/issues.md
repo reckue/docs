@@ -20,21 +20,23 @@ Any issue consists of a title, description, assignee and labels.
 - consist type, priority and status.
 
 #### Types of labels:
-- type:project - changes in project architecture.
-- type:story - big changes in logic of project requiring phased implementation.
-- type:task - a part of story or a task covering several classes.
-- type:subtask - a part of task. 
-- type:defect - a bug or mistake in a code.
-- type:blocker - the most important defect which blocking other features.
+- `type:project` - changes in project architecture.
+- `type:story` - big changes in logic of project requiring phased implementation.
+- `type:task` - a part of story or a task covering several classes.
+- `type:subtask` - a part of task. 
+- `type:defect` - a bug or mistake in a code.
+- `type:blocker` - the most important defect which blocking other features.
 
 #### Priority of labels:
-- priority:critical - requires immediate execution.
-- Priority:Normal - there is time to execute.
-- priority:low - must be completed during the sprint.
+- `priority:critical` - requires immediate execution.
+- `Priority:Normal` - there is time to execute.
+- `priority:low` - must be completed during the sprint.
 
 #### Statuses of labels:
-- on hold - can't be completed without another requirements.
-- ready for testing - requires to check.
-- duplicate - not a unique.
-- question - there are some questions.
-- required additional info - need to get more information.
+- `on hold` - can't be completed without another requirements.
+- `ready for testing` - requires to check.
+- `duplicate` - not a unique.
+- `question` - there are some questions.
+- `required` additional info - need to get more information.
+
+![alt text](https://github.com/camelya58/pictures/blob/master/issue.png "Example of an issue")
