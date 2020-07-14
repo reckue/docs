@@ -1,5 +1,11 @@
 ## Rules for creating an issue.
-Any issue consists of a title, description, assignee and labels.
+
+
+#### Key points:
+1.  If you have no issue for some founded problem, than create it before making changes.
+2.  Any issue consists of a title, description, assignee and labels.
+3.  Avoid using prefix words in title of issue with type label - "story" such as "Add", "Fix" and etc.
+4.  Use the pattern: "ISSUE-{your issue number}/{your-issue-title}" - in branches naming.
 
 ### Title
 - must be concrete and informative;
@@ -39,4 +45,4 @@ Any issue consists of a title, description, assignee and labels.
 - `question` - there are some questions.
 - `required` additional info - need to get more information.
 
-![alt text](https://github.com/camelya58/pictures/blob/master/issue.png "Example of an issue")
+![alt text](https://i.ibb.co/p2yBp2H/issue.png "Example of an issue")
