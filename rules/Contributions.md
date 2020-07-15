@@ -13,4 +13,5 @@ After a few seconds, you will be redirected to your own new project page contain
 ## 2.
 Create a thematic branch from the master branch. And fix our changes in the project code in the thematic branch.
 ![alt text](https://sun1-84.userapi.com/Mw7NF3ZJvj7nROuv3AmZtF-XASMAIgfQ5-ngJQ/yHEOOqAAtMU.jpg "Your thematic branch")
-
+## 3.
+Submit a new branch to our copy on GitHub
