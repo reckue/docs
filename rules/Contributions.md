@@ -11,7 +11,6 @@ In order to create your own branch of the project, go to the project page and cl
 ![alt text](https://sun9-33.userapi.com/LB_tZBLQODGjCUyNVbmpbj0B14NtLyB-c1EbPg/KWfV_o4S538.jpg "Fork")
 After a few seconds, you will be redirected to your own new project page containing your copy in which you have write permissions.
 ## 2.
-Create a thematic branch from the master branch.
+Create a thematic branch from the master branch. And fix our changes in the project code in the thematic branch.
 ![alt text](https://sun1-84.userapi.com/Mw7NF3ZJvj7nROuv3AmZtF-XASMAIgfQ5-ngJQ/yHEOOqAAtMU.jpg "Your thematic branch")
 
-We fix our changes in the project code in the thematic branch.
