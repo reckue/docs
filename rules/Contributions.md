@@ -13,4 +13,3 @@ After a few seconds, you will be redirected to your own new project page contain
 ## 2.
 Create a thematical branch from the master branch.
 ![alt text](https://sun1-97.userapi.com/7fO3LstNa3Fd05UReTXbQ8c3kdRXKMLk7oyInw/LzO9J113SkE.jpg "Your thematical branch")
-https://sun1-97.userapi.com/7fO3LstNa3Fd05UReTXbQ8c3kdRXKMLk7oyInw/LzO9J113SkE.jpg
