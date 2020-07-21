@@ -7,3 +7,4 @@
 ### post-api
 - Models
 - Releases
+- [Exceptions](post-api/exceptions/Exceptions.md)
