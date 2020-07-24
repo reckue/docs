@@ -74,3 +74,39 @@ kubectl create deployment post --image=reckue/post:latest --dry-run -o=yaml > de
 ```bash
 kubectl create service clusterip post --tcp=8080:8080 --dry-run -o=yaml >> deployment.yaml
 ```
+
+# MongoDB
+Please follow this tutorial:
+https://www.melvinvivas.com/converting-a-mongodb-docker-compose-file-to-a-kubernetes-deployment/
+
+## Step 1.
+```yaml
+version: '3'
+services:
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - "mongodb:/data/db"
+    networks:
+      - network1
+
+volumes:
+  mongodata:
+
+networks:
+  network1:
+```
+
+## Step 2.
+```
+kompose convert -f docker-compose.yml
+```
+
+## Step 3.
+```
+kubectl create -f mongodata-persistentvolumeclaim.yaml
+kubectl create -f mongodb-deployment.yaml
+kubectl create -f mongodb-service.yaml
+```
