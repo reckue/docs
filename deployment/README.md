@@ -79,7 +79,7 @@ kubectl create service clusterip post --tcp=8080:8080 --dry-run -o=yaml >> deplo
 Please follow this tutorial:
 https://www.melvinvivas.com/converting-a-mongodb-docker-compose-file-to-a-kubernetes-deployment/
 
-## Step 1.
+## Step 1. Create docker-ompose.yml
 ```yaml
 version: '3'
 services:
@@ -99,12 +99,12 @@ networks:
   network1:
 ```
 
-## Step 2.
+## Step 2. Generate kubernates scripts
 ```
 kompose convert -f docker-compose.yml
 ```
 
-## Step 3.
+## Step 3. Create PVC, Deployment and Service
 ```
 kubectl create -f mongodata-persistentvolumeclaim.yaml
 kubectl create -f mongodb-deployment.yaml
