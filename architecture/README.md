@@ -5,3 +5,4 @@
 
 ### post-api
 - [Models](https://reckue.github.io/docs/architecture/post-api/models)
+- [Exceptions](https://reckue.github.io/docs/architecture/post-api/post-api/exceptions/Exceptions)
