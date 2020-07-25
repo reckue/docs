@@ -1,10 +1,8 @@
 # Architecture
 
 ### account-api
-- [Models](https://reckue.github.io/docs/architecture/post-api/models)
-- Releases
+- [Models](https://reckue.github.io/docs/architecture/account-api/models)
 
 ### post-api
-- Models
-- Releases
-- [Exceptions](post-api/exceptions/Exceptions.md)
+- [Models](https://reckue.github.io/docs/architecture/post-api/models)
+- [Exceptions](https://reckue.github.io/docs/architecture/post-api/post-api/exceptions/Exceptions)

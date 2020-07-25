@@ -1,6 +1,5 @@
 # Rules
-##
-- [Contributions](Contributions.md)
-- [Issues](Issues.md)
-- [Pull requests](Pull_requests.md)
-- [Milestones](Milestones.md)
+- [Contributions](/docs/rules/Contributions)
+- [Issues](/docs/rules/Issues)
+- [Pull requests](/docs/rules/Pull_requests)
+- [Milestones](/docs/rules/Milestones)
