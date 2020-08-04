@@ -18,6 +18,7 @@
 | CommentNotFoundException | RPE-004 |  
 | RatingNotFoundException	| RPE-005 |   	
 | PollNodeNotFoundException	| RPE-006 |
+| BadRequestException	| RPE-007 |
 | PostAlreadyExistsException | RPE-1001 |  
 | NodeAlreadyExistsException	| RPE-1002 |   	
 | TagAlreadyExistsException	| RPE-1003 |
