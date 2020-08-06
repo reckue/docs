@@ -4,6 +4,7 @@
  #
 ## 1.
 Above all things you need to download IDE. We recomended to use WebStorm (ws), but if you have any preference use others IDE, just do it.
+<br>
 You can get a trial version of ws on [jetbrains.com](https://www.jetbrains.com/webstorm/). After installation ask your curator, he will help you get a license.
 ## 2. 
 You need to download and install [git](https://git-scm.com/downloads) and [node.js](https://nodejs.org/en/) 
