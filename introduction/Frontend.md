@@ -1,4 +1,4 @@
-# Introduction to frontend
+# Introduction to frontend development
 ### If you want to start development in our frontend team, you have to configure your working environment.
  Here is a step-by-step guide for obtainment the minimum required working environment.
  #
