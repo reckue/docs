@@ -32,3 +32,12 @@ Firstly you will get one base collection named `Default` collection.
 So you dont have to use collections functionality without pleasure.
 Its not something static, you could rename or remove it.
 
+Using rest you could access to follow list of methods:
+
+ URL: {base_url}/collections
+ Requared: none
+ Access: Application Token
+ Responce: List of all collections stored on current server.
+ Desc: Application layer method. Could be used for debug, analytics and etc.
+
+Additionally collection could be gotten with list of terms.
