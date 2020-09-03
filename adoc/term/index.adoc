@@ -1,0 +1,3 @@
+= Collections
+
+include::collections.adoc[]

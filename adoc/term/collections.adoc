@@ -1,0 +1,34 @@
+In sometimes you necessary to work with different system of terms, unrelated with any other.
+For example two different languages or parts of science as math or physics.
+
+In this cause were invented collections feature.
+Its let customers option to group their terms and separate one terms from each other.
+
+In the application collections forms as follow list of props. Look below:
+
+ Name: id;
+ Type: String;
+ Desc: Simple UUID converted to string.
+ Using to identify the unique collection by application.
+
+ Name: userId;
+ Type: String;
+ Desc: Same as id field, but identify unique user.
+ So collections of one user insnt shown for each other.
+
+ Name: name
+ Type: String
+ Desc: Simple string value. Using to identify unique collection by customer.
+ One user must have only one collection with specific name.
+ But one name could be used by other users.
+
+ Name: access
+ Type: enum
+ Desc: Field would be used for community-public collections.
+ Community-public collection - ready to use published collections,
+ which you can upload by url or from community market.
+
+Firstly you will get one base collection named `Default` collection.
+So you dont have to use collections functionality without pleasure.
+Its not something static, you could rename or remove it.
+
