@@ -1,0 +1,7 @@
+Term is the basic compilation of two related words or sentences.
+The first part of term could be parsed by plugin on web pages in runtime.
+
+Furthermore term shouldn't be a single word to being parsed correctly,
+but sentence or specific combination of word must be manually be added to
+the collection. Sentences would be parsed firstly in order of their queue numbers.
+
