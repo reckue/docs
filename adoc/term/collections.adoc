@@ -18,15 +18,15 @@ In the application collections forms as follow list of props. Look below:
 
  Name: name
  Type: String
- Desc: Simple string value. Using to identify unique collection by customer.
- One user must have only one collection with specific name.
- But one name could be used by other users.
+ Desc: Simple string value. Using to identify unique collection by customer. One user must have only one collection with specific name. But one name could be used by other users.
 
  Name: access
  Type: enum
- Desc: Field would be used for community-public collections.
- Community-public collection - ready to use published collections,
- which you can upload by url or from community market.
+ Desc: Field would be used for community-public collections. Community-public collection - ready to use published collections, which you can upload by url or from community market.
+
+ Name: size
+ Type: long
+ Desc: Count of terms in collection. Havent kept into database, but will be found after getting current collection, inside application logic.
 
 Firstly you will get one base collection named `Default` collection.
 So you dont have to use collections functionality without pleasure.
@@ -35,9 +35,15 @@ Its not something static, you could rename or remove it.
 Using rest you could access to follow list of methods:
 
  URL: {base_url}/collections
- Requared: none
- Access: Application Token
- Responce: List of all collections stored on current server.
- Desc: Application layer method. Could be used for debug, analytics and etc.
+ Required: none
+ Access: Applications Token
+ Response: List of all collections stored on current server.
+ Desc: An application layer endpoint. Could be used for debug, analytics and etc.
+
+ URL: {base_url}/collections/user/{id}
+ Required: params(String id)
+ Access: Users Token
+ Response: List of collections for the certain user
+ Desc: A personal user's endpoint. Used in UI when we need to get list of collection, take common info and transfer somewhere or processing somehow.
 
 Additionally collection could be gotten with list of terms.
