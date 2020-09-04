@@ -1,0 +1,18 @@
+Post its a publication in a social service, which would be accessed
+by anyone, some group of users, by url or be completely private.
+Publication could be written by single user or by group of users.
+
+[cols="1, 1, 1 , 4", options="header"]
+.Post
+|===
+| Type | Name | required  | Description
+| String | id | ??? | Using to identify the unique collection by application.
+| String | title | ??? | A brief description for content
+| List<Node> | nodes | ??? | Full entry content spliced into pieces named as nodes
+| String | source | ??? | ???
+| String | userId | ??? | Using to identify unique user, which would be the owner of post.
+| List<Tag> | tags | ??? | List of brief messages, which help to decide reading or ignore the post. Also could be used by filters.
+| PostStatusType | status | ??? |
+| long | modificationDate | ??? | ???
+| long | createdDate | ??? | Date when post was created.
+
