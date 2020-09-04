@@ -1,9 +1,8 @@
-Post its a publication in a social service, which would be accessed
-by anyone, some group of users, by url or be completely private.
-Publication could be written by single user or by group of users.
+Post in a context of Reckue realization produced in form of nodes list,
+and additional fields that describe it and made more dynamically.
 
 [cols="1, 1, 1 , 4", options="header"]
-.Post
+.Post model yet.
 |===
 | Type | Name | required  | Description
 | String | id | ??? | Using to identify the unique collection by application.
@@ -12,7 +11,16 @@ Publication could be written by single user or by group of users.
 | String | source | ??? | ???
 | String | userId | ??? | Using to identify unique user, which would be the owner of post.
 | List<Tag> | tags | ??? | List of brief messages, which help to decide reading or ignore the post. Also could be used by filters.
-| PostStatusType | status | ??? |
-| long | modificationDate | ??? | ???
+| PostStatusType | status | ??? | Split post by groups and let us possibility to set scope of visibility for posts.
+| long | modificationDate | ??? | Could be used for filtering and sorting.
 | long | createdDate | ??? | Date when post was created.
+|===
 
+IMPORTANT: I have some moments that i couldn't write fast without communication with team, so i still it undefined and add `???` symbol.
+
+WARNING: Why in this entity field `nodes` is presented as List of Nodes? Why dont we used list of nodeId Strings?
+
+TIP: We should add field `publicationDate`. Post could be created, but published. A
+
+https://dom.spec.whatwg.org/#nodes[Please, watch a DOM reference.]
+We have tonnes of the similar ideas. Probably we could get some good moments from existing realization of DOM.
