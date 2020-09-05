@@ -9,18 +9,9 @@ Getting posts with a limit and offset.
 curl https://reckue.com/api/v1/posts
 ----
 
-===== Parameters
-`limit` - Limit of posts.
-
-`offset` - offset of posts. By default, 0.
-
-`desc` - sorting by descending or ascending order. By, default false.
-
-`sort` - sorting by field name. By default, empty.
-
 [%header,cols=3*]
 |===
-|Endpoint
+|Parameter
 |Description
 |Since
 
