@@ -20,12 +20,6 @@
 |Work with tags.
 |===
 
-
-- link:posts.adoc[posts]
-- link:nodes.adoc[nodes]
-- link:comments.adoc[comments]
-- link:tags.adoc[tags]
-
 include::posts.adoc[]
 include::nodes.adoc[]
 include::comments.adoc[]
