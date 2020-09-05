@@ -38,7 +38,54 @@ curl https://reckue.com/api/v1/posts
 ----
 [
   {
-    "post": "1"
+    "id": "5f3190c7e810fe1a026e7f80",
+    "title": "Hello",
+    "nodes": [
+      {
+        "id": "5f3190dae810fe1a026e7f82",
+        "type": "TEXT",
+        "node": {
+          "content": "1234"
+        },
+        "postId": "5f3190c7e810fe1a026e7f80",
+        "source": null,
+        "userId": "1",
+        "createdDate": 1597083866626,
+        "modificationDate": 1597083866626,
+        "status": null
+      }
+    ],
+    "source": null,
+    "userId": "098f6bcd462133738ade4e832627b4f6",
+    "tags": [],
+    "createdDate": 1597083847950,
+    "modificationDate": 1597083866637,
+    "status": "DRAFT"
+  },
+  {
+    "id": "5f3193eee810fe1a026e7f84",
+    "title": "1312312123123312",
+    "nodes": [
+      {
+        "id": "5f324e68d8c0803dcf3eb39e",
+        "type": "TEXT",
+        "node": {
+          "content": "123123123123"
+        },
+        "postId": "5f3193eee810fe1a026e7f84",
+        "source": null,
+        "userId": "1",
+        "createdDate": 1597132392409,
+        "modificationDate": 1597132392409,
+        "status": null
+      }
+    ],
+    "source": null,
+    "userId": "f5adc5d22dd03f1b81020b11ae7e657e",
+    "tags": [],
+    "createdDate": 1597084654017,
+    "modificationDate": 1597132392466,
+    "status": "DRAFT"
   }
 ]
 ----
