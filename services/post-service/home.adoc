@@ -22,9 +22,3 @@
 
 
 include::posts.adoc[]
-
-include::nodes.adoc[]
-
-include::comments.adoc[]
-
-include::tags.adoc[]
