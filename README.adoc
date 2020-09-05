@@ -1,0 +1,18 @@
+= Reckue Docs
+Reckue project documentation.
+
+== Services
+. Account service
+. Post service
+. API gateway
+. Registry service
+
+== Sprints
+. Sprint 1
+. Sprint 2
+. Sprint 3
+
+== For contributers
+. Rules
+. Recommendations
+
