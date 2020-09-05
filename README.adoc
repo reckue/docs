@@ -13,6 +13,6 @@ Reckue project documentation.
 . Sprint 2
 . Sprint 3
 
-== For contributers
+== For contributors
 . Rules
 . Recommendations
