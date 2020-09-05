@@ -1,7 +1,32 @@
 = Post service
 
 == Endpoints
+
+[%header,cols=2*]
+|===
+|Endpoint
+|Description
+
+|link:posts.adoc[posts]
+|Work with posts.
+
+|link:nodes.adoc[nodes]
+|Work with nodes.
+
+|link:comments.adoc[comments]
+|work with comments.
+
+|link:tags.adoc[tags]
+|Work with tags.
+|===
+
+
 - link:posts.adoc[posts]
 - link:nodes.adoc[nodes]
 - link:comments.adoc[comments]
 - link:tags.adoc[tags]
+
+include::posts.adoc[]
+include::nodes.adoc[]
+include::comments.adoc[]
+include::tags.adoc[]
