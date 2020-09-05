@@ -1,7 +1,7 @@
 == Posts
 
 === Get all posts
-Getting posts with a limit, offset and sorting.
+Getting posts with filter by limit, offset and sort parameters.
 
 ==== Request
 [source,bash]
