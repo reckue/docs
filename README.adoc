@@ -3,10 +3,10 @@
 Reckue project documentation.
 
 == Services
-. link:services/account-service.adoc[Account service]
-. link:services/post-service.adoc[Post service]
-. link:services/api-gateway.adoc[API gateway]
-. link:services/registry-service.adoc[Registry service]
+. link:services/account-service/home.adoc[Account service]
+. link:services/post-service/home.adoc[Post service]
+. link:services/api-gateway/home.adoc[API gateway]
+. link:services/registry-service/home.adoc[Registry service]
 
 == Sprints
 . Sprint 1
@@ -16,4 +16,3 @@ Reckue project documentation.
 == For contributers
 . Rules
 . Recommendations
-
