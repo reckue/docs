@@ -21,8 +21,6 @@
 |===
 
 
-include::posts.adoc[]
-
 include::nodes.adoc[]
 
 include::comments.adoc[]
