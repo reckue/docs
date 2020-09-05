@@ -1,7 +1,7 @@
 = Post service
 
 == Endpoints
-. link:post/posts.adoc[posts]
-. link:post/nodes.adoc[nodes]
-. link:post/comments.adoc[comments]
-. link:post/tags.adoc[tags]
+- link:post/posts.adoc[posts]
+- link:post/nodes.adoc[nodes]
+- link:post/comments.adoc[comments]
+- link:post/tags.adoc[tags]
