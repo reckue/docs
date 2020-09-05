@@ -1,3 +1,58 @@
 == Posts
-1234
 
+=== Get all posts
+Getting posts with a limit and offset.
+
+==== Request
+[source,bash]
+----
+curl https://reckue.com/api/v1/posts
+----
+
+===== Parameters
+`limit` - Limit of posts.
+
+`offset` - offset of posts. By default, 0.
+
+`desc` - sorting by descending or ascending order. By, default false.
+
+`sort` - sorting by field name. By default, empty.
+
+[%header,cols=3*]
+|===
+|Endpoint
+|Description
+|Since
+
+|```limit```
+|Limit of posts. By default, 10.
+|1.0.0
+
+|```offset```
+|Offset of posts. By default, 0.
+|1.0.0
+
+|```desc```
+|Sorting by descending or ascending order. By, default false.
+|1.0.0
+
+|```sort```
+|Sorting by field name. By default, empty.
+|1.0.0
+|===
+
+==== Responses
+===== 200 OK
+[source,json]
+----
+[
+  {
+    "post": "1"
+  }
+]
+----
+
+=== Get a post by id
+=== Create a post
+=== Update the post by id
+=== Delete the post by id
