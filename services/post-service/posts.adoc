@@ -363,4 +363,3 @@ curl https://reckue.com/api/v1/posts/5f562a66ddc0e87bfc689fc7
   "trace": "com.reckue.post.exceptions.models.post.PostNotFoundException: Post by id '5f3190c7e810fe1a026e7f8' is not found\n\tat ..."
  }
 ----
-
