@@ -1,0 +1,18 @@
+= Reckue Docs
+
+Reckue project documentation.
+
+== Services
+. link:services/account-service/home.adoc[Account service]
+. link:services/post-service/home.adoc[Post service]
+. link:services/api-gateway/home.adoc[API gateway]
+. link:services/registry-service/home.adoc[Registry service]
+
+== Sprints
+. Sprint 1
+. Sprint 2
+. Sprint 3
+
+== For contributors
+. Rules
+. Recommendations

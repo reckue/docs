@@ -1,0 +1,34 @@
+= Post service
+
+== Endpoints
+
+[%header,cols=3*]
+|===
+|Endpoint
+|Description
+|Since
+
+|link:posts.adoc[posts]
+|Work with posts.
+|1.0.0
+
+|link:nodes.adoc[nodes]
+|Work with nodes.
+|1.0.0
+
+|link:comments.adoc[comments]
+|work with comments.
+|1.0.0
+
+|link:tags.adoc[tags]
+|Work with tags.
+|1.0.0
+|===
+
+include::posts.adoc[]
+
+include::nodes.adoc[]
+
+include::comments.adoc[]
+
+include::tags.adoc[]
