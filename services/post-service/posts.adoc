@@ -24,11 +24,11 @@ curl https://reckue.com/api/v1/posts
 |1.0.0
 
 |```desc```
-|Sorting by descending or ascending order. By, default false.
+|Sorting by descending or ascending order. By default false.
 |1.0.0
 
 |```sort```
-|Sorting by field name. By default, empty.
+|Sorting by field name (tittle, source, createdDate, modificationDate, status, id, userId). By default, id.
 |1.0.0
 |===
 
@@ -91,6 +91,276 @@ curl https://reckue.com/api/v1/posts
 ----
 
 === Get a post by id
+Getting post by the given id.
+
+==== Request
+[source,bash]
+----
+curl https://reckue.com/api/v1/posts/5f3190c7e810fe1a026e7f80
+----
+
+==== Responses
+===== 200 OK
+[source,json]
+----
+[
+  {
+    "id": "5f3190c7e810fe1a026e7f80",
+    "title": "Hello",
+    "nodes": [
+      {
+        "id": "5f3190dae810fe1a026e7f82",
+        "type": "TEXT",
+        "node": {
+          "content": "1234"
+        },
+        "postId": "5f3190c7e810fe1a026e7f80",
+        "source": null,
+        "userId": "1",
+        "createdDate": 1597083866626,
+        "modificationDate": 1597083866626,
+        "status": null
+      }
+    ],
+    "source": null,
+    "userId": "098f6bcd462133738ade4e832627b4f6",
+    "tags": [],
+    "createdDate": 1597083847950,
+    "modificationDate": 1597083866637,
+    "status": "DRAFT"
+  }
+ ]
+----
+
+===== 404 NOT_FOUND (RPE-001)
+[source,json]
+----
+{
+  "title": "PostNotFoundException",
+  "message": "Post by id '5f3190c7e810fe1a026e7f8' is not found",
+  "code": "RPE-001",
+  "trace": "com.reckue.post.exceptions.models.post.PostNotFoundException: Post by id '5f3190c7e810fe1a026e7f8' is not found\n\tat ..."
+ }
+----
+
+=== Get all posts by tittle
+Getting all posts by given tittle.
+
+==== Request
+[source,bash]
+----
+curl https://reckue.com/api/v1/posts/title/Jaxb%20Context
+----
+==== Request example:
+----
+Jaxb Context
+----
+
+==== Responses
+===== 200 OK
+[source,json]
+----
+[
+  {
+    "id": "5f562906ddc0e87bfc689fc6",
+    "title": "Jaxb Context",
+    "nodes": [
+      {
+        "id": "5f562906ddc0e87bfc689fc5",
+        "type": "TEXT",
+        "node": {
+          "content": null
+        },
+        "postId": "string",
+        "source": "string",
+        "userId": "string",
+        "createdDate": 1599482118037,
+        "modificationDate": 1599482118037,
+        "status": null
+      }
+    ],
+    "source": "baeldung.com",
+    "userId": "string1",
+    "tags": [
+      {
+        "id": "string",
+        "name": "string"
+      }
+    ],
+    "createdDate": 1599482118141,
+    "modificationDate": 1599482118141,
+    "status": "DRAFT"
+  },
+  {
+    "id": "5f56302dddc0e87bfc689fcc",
+    "title": "Jaxb Context",
+    "nodes": [],
+    "source": "wiki.com",
+    "userId": "string2",
+    "tags": [
+      {
+        "id": "string",
+        "name": "jaxb"
+      }
+    ],
+    "createdDate": 1599483949968,
+    "modificationDate": 1599483949968,
+    "status": "DRAFT"
+  }
+]
+----
+===== FAILURE 200
+[source,json]
+----
+[]
+----
+
 === Create a post
+Adding new post with nodes, source, tags and other fields.
+
+==== Request
+[source,bash]
+----
+curl https://reckue.com/api/v1/posts
+----
+
+==== Request example:
+[source,json]
+----
+{
+  "nodes": [
+    {
+      "node": {
+        "type": "TEXT"
+      },
+      "postId": "string",
+      "source": "string",
+      "type": "TEXT",
+      "userId": "string"
+    }
+  ],
+  "source": "baeldung.com",
+  "tags": [
+    {
+      "id": "string",
+      "name": "string"
+    }
+  ],
+  "title": "Jaxb Context",
+  "userId": "string1"
+}
+----
+==== Responses
+===== 200 OK
+[source,json]
+----
+{
+  "id": "5f562906ddc0e87bfc689fc6",
+  "title": "Jaxb Context",
+  "nodes": [
+    {
+      "id": "5f562906ddc0e87bfc689fc5",
+      "type": "TEXT",
+      "node": {
+        "content": null
+      },
+      "postId": "string",
+      "source": "string",
+      "userId": "string",
+      "createdDate": 1599482118037,
+      "modificationDate": 1599482118037,
+      "status": null
+    }
+  ],
+  "source": "baeldung.com",
+  "userId": "string1",
+  "tags": [
+    {
+      "id": "string",
+      "name": "string"
+    }
+  ],
+  "createdDate": 1599482118141,
+  "modificationDate": 1599482118141,
+  "status": "DRAFT"
+}
+----
+When post has already been created it always has the status "DRAFT".
+
 === Update the post by id
+Updating post by given id.
+
+==== Request
+[source,bash]
+----
+curl https://reckue.com/api/v1/posts/5f562a66ddc0e87bfc689fc7
+----
+==== Responses
+===== 200 OK
+[source,json]
+----
+{
+  "id": "5f562a66ddc0e87bfc689fc7",
+  "title": "JAXB Context",
+  "nodes": [
+    {
+      "id": "5f562cecddc0e87bfc689fc8",
+      "type": "TEXT",
+      "node": {
+        "content": null
+      },
+      "postId": "string",
+      "source": "string",
+      "userId": "string",
+      "createdDate": 1599483116522,
+      "modificationDate": 1599483116522,
+      "status": null
+    }
+  ],
+  "source": "baeldung.com",
+  "userId": "string",
+  "tags": [
+    {
+      "id": "string",
+      "name": "jaxb"
+    }
+  ],
+  "createdDate": 1599482470217,
+  "modificationDate": 1599483116530,
+  "status": "DRAFT"
+}
+----
+===== 404 NOT_FOUND (RPE-001)
+[source,json]
+----
+{
+  "title": "PostNotFoundException",
+  "message": "Post by id '5f3190c7e810fe1a026e7f8' is not found",
+  "code": "RPE-001",
+  "trace": "com.reckue.post.exceptions.models.post.PostNotFoundException: Post by id '5f3190c7e810fe1a026e7f8' is not found\n\tat ..."
+ }
+----
+
 === Delete the post by id
+Deleting post by given id.
+
+==== Request
+[source,bash]
+----
+curl https://reckue.com/api/v1/posts/5f562a66ddc0e87bfc689fc7
+----
+
+==== Responses
+===== 200 OK
+
+===== 404 NOT_FOUND (RPE-001)
+[source,json]
+----
+{
+  "title": "PostNotFoundException",
+  "message": "Post by id '5f3190c7e810fe1a026e7f8' is not found",
+  "code": "RPE-001",
+  "trace": "com.reckue.post.exceptions.models.post.PostNotFoundException: Post by id '5f3190c7e810fe1a026e7f8' is not found\n\tat ..."
+ }
+----
+
