@@ -1,1 +1,212 @@
 == Nodes
+
+=== Get all nodes
+Getting nodes which filtering by limit, offset and sort parameters.
+
+==== Request
+[source,bash]
+----
+curl https://reckue.com/api/v1/nodes
+HTTP method: GET
+----
+
+[%header,cols=3*]
+|===
+|Parameter
+|Description
+|Since
+
+|```limit```
+|Limit of nodes. By default, 10.
+|1.0.0
+
+|```offset```
+|Offset of nodes. By default, 0.
+|1.0.0
+
+|```desc```
+|Sorting by descending or ascending order. By default false.
+|1.0.0
+
+|```sort```
+|Sorting by field name (type, status, source, createdDate, modificationDate, id, userId). By default, id.
+|1.0.0
+|===
+
+==== Responses
+===== 200 OK
+[source,json]
+----
+[
+  {
+    "id": "5f3190d4e810fe1a026e7f81",
+    "type": "TEXT",
+    "node": {
+      "content": "1234"
+    },
+    "postId": "5f3190c7e810fe1a026e7f80",
+    "source": null,
+    "userId": "1",
+    "createdDate": 1597083860359,
+    "modificationDate": 1597083860359,
+    "status": null
+  },
+  {
+    "id": "5f3190dae810fe1a026e7f82",
+    "type": "TEXT",
+    "node": {
+      "content": "1234"
+    },
+    "postId": "5f3190c7e810fe1a026e7f80",
+    "source": null,
+    "userId": "1",
+    "createdDate": 1597083866626,
+    "modificationDate": 1597083866626,
+    "status": null
+  }
+]
+----
+
+=== Get a node by id
+Getting node by the given id.
+
+==== Request
+[source,bash]
+----
+curl https://reckue.com/api/v1/nodes/5f3190d4e810fe1a026e7f81
+HTTP method: GET
+----
+
+==== Responses
+===== 200 OK
+[source,json]
+----
+{
+  "id": "5f3190d4e810fe1a026e7f81",
+  "type": "TEXT",
+  "node": {
+    "content": "1234"
+  },
+  "postId": "5f3190c7e810fe1a026e7f80",
+  "source": null,
+  "userId": "1",
+  "createdDate": 1597083860359,
+  "modificationDate": 1597083860359,
+  "status": null
+}
+----
+
+===== 404 NOT_FOUND (RPE-002)
+[source,json]
+----
+{
+  "title": "NodeNotFoundException",
+  "message": "Node by id '5f3j90d4e810fe1a026e7f83' is not found",
+  "code": "RPE-002",
+  "trace": "com.reckue.post.exceptions.models.nodes.NodeNotFoundException: Node by id 1 is not found\n\tat ..."
+ }
+----
+
+=== Create a node
+Adding new post with type, node, postId, source, userId and other fields.
+
+==== Request
+[source,bash]
+----
+curl https://reckue.com/api/v1/nodes
+HTTP method: POST
+----
+
+==== Request example:
+[source,json]
+----
+{
+  "node": {
+    "type": "TEXT"
+  },
+  "postId": "string",
+  "source": "string",
+  "type": "TEXT",
+  "userId": "string"
+}
+----
+==== Responses
+===== 200 OK
+[source,json]
+----
+{
+  "id": "5f57c87427706b19aefe4c3a",
+  "type": "TEXT",
+  "node": {
+    "content": null
+  },
+  "postId": "string",
+  "source": "string",
+  "userId": "string",
+  "createdDate": 1599588468921,
+  "modificationDate": 1599588468921,
+  "status": null
+}
+----
+
+=== Update the node by id
+Updating node by given id.
+
+==== Request
+[source,bash]
+----
+curl: https://reckue.com/api/v1/nodes/5f3190d4e810fe1a026e7f81
+HTTP method: PUT
+----
+==== Responses
+===== 200 OK
+[source,json]
+----
+{
+  "id": "5f3190d4e810fe1a026e7f81",
+  "type": "TEXT",
+  "node": {
+    "content": "1234"
+  },
+  "postId": "5f3190c7e810fe1a026e7f80",
+  "source": "string",
+  "userId": "string",
+  "createdDate": 1597083860359,
+  "modificationDate": 1599588701748,
+  "status": null
+}
+----
+===== 404 NOT_FOUND (RPE-001)
+[source,json]
+----
+{
+  "title": "NodeNotFoundException",
+  "message": "Node by id 5f3j190d4e810fe1a026e7f81 is not found",
+  "code": "RPE-002",
+  "trace": "com.reckue.post.exceptions.models.nodes.NodeNotFoundException: Node by id 5f3j190d4e810fe1a026e7f81 is not found\n\tat  ..."
+ }
+----
+
+=== Delete the node by id
+Deleting node by given id.
+
+==== Request
+[source,bash]
+----
+curl https://reckue.com/api/v1/nodes/5f3190d4e810fe1a026e7f81
+HTTP method: DELETE
+----
+
+==== Responses
+===== 200 OK
+
+===== 404 NOT_FOUND (RPE-001)
+[source,json]
+----
+{
+  "title": "NodeNotFoundException",
+  "message": "Node by id 5f3j190d4e810fe1a026e7f81 is not found",
+  "code": "RPE-002",
+  "trace": "com.reckue.post.exceptions.models.nodes.NodeNotFoundException: Node by id 5f3j190d4e810fe1a026e7f81 is not found\n\tat ..."
+ }
+----
