@@ -221,7 +221,7 @@ Adding new post with nodes, source, tags and other fields.
 ==== Request
 [source,bash]
 ----
-curl https://reckue.com/api/v1/posts
+curl -X POST https://reckue.com/api/v1/posts
 ----
 
 ==== Request example:
@@ -293,7 +293,7 @@ Updating post by given id.
 ==== Request
 [source,bash]
 ----
-curl https://reckue.com/api/v1/posts/5f562a66ddc0e87bfc689fc7
+curl -X PUT https://reckue.com/api/v1/posts/5f562a66ddc0e87bfc689fc7
 ----
 ==== Responses
 ===== 200 OK
@@ -347,7 +347,7 @@ Deleting post by given id.
 ==== Request
 [source,bash]
 ----
-curl https://reckue.com/api/v1/posts/5f562a66ddc0e87bfc689fc7
+curl -X DELETE https://reckue.com/api/v1/posts/5f562a66ddc0e87bfc689fc7
 ----
 
 ==== Responses
