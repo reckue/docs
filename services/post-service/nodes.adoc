@@ -6,8 +6,7 @@ Getting nodes which filtering by limit, offset and sort parameters.
 ==== Request
 [source,bash]
 ----
-curl https://reckue.com/api/v1/nodes
-HTTP method: GET
+curl -X GET https://reckue.com/api/v1/nodes
 ----
 
 [%header,cols=3*]
@@ -73,8 +72,7 @@ Getting node by the given id.
 ==== Request
 [source,bash]
 ----
-curl https://reckue.com/api/v1/nodes/5f3190d4e810fe1a026e7f81
-HTTP method: GET
+curl -X GET https://reckue.com/api/v1/nodes/5f3190d4e810fe1a026e7f81
 ----
 
 ==== Responses
@@ -113,8 +111,7 @@ Adding new post with type, node, postId, source, userId and other fields.
 ==== Request
 [source,bash]
 ----
-curl https://reckue.com/api/v1/nodes
-HTTP method: POST
+curl -X POST https://reckue.com/api/v1/nodes
 ----
 
 ==== Request example:
@@ -155,8 +152,7 @@ Updating node by given id.
 ==== Request
 [source,bash]
 ----
-curl: https://reckue.com/api/v1/nodes/5f3190d4e810fe1a026e7f81
-HTTP method: PUT
+curl -X PUT https://reckue.com/api/v1/nodes/5f3190d4e810fe1a026e7f81
 ----
 ==== Responses
 ===== 200 OK
@@ -193,8 +189,7 @@ Deleting node by given id.
 ==== Request
 [source,bash]
 ----
-curl https://reckue.com/api/v1/nodes/5f3190d4e810fe1a026e7f81
-HTTP method: DELETE
+curl -X DELETE https://reckue.com/api/v1/nodes/5f3190d4e810fe1a026e7f81
 ----
 
 ==== Responses
