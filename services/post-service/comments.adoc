@@ -1,1 +1,276 @@
 == Comments
+
+=== Get all comments
+
+Getting comments which filtering by limit, offset and sort parameters.
+
+==== Request
+
+[source,bash]
+----
+curl https://reckue.com/api/v1/comments
+HTTP method: GET
+----
+
+[%header,cols=3*]
+|===
+|Parameter
+|Description
+|Since
+
+|```limit```
+|Limit of comments. By default, 10.
+|1.0.0
+
+|```offset```
+|Offset of comments. By default, 0.
+|1.0.0
+
+|```desc```
+|Sorting by descending or ascending order. By default false.
+|1.0.0
+
+|```sort```
+|Sorting by field name (id, userId, postId, createdDate, modificationDate). By default, id.
+|1.0.0
+|===
+
+==== Responses
+
+===== 200 OK
+
+[source,json]
+----
+[
+  {
+    "id": "5f4f7c6435be326aba6953f5",
+    "userId": "string",
+    "postId": "5f4954133aae6a2348769d27",
+    "commentId": null,
+    "createdDate": 1599044708617,
+    "modificationDate": 1599044708617,
+    "nodes": [
+      {
+        "id": "5f4f7c6435be326aba6953f4",
+        "type": "TEXT",
+        "node": {
+          "content": null
+        },
+        "commentId": "string",
+        "source": "HELLO!",
+        "createdDate": 1599044708576,
+        "modificationDate": 1599044708576
+      }
+    ]
+  }
+]
+----
+
+=== Get a comment by id
+
+Getting comment by the given id.
+
+==== Request
+
+[source,bash]
+----
+curl https://reckue.com/api/v1/comments/5f4f7c6435be326aba6953f5
+HTTP method: GET
+----
+
+==== Responses
+
+===== 200 OK
+
+[source,json]
+----
+{
+  "id": "5f4f7c6435be326aba6953f5",
+  "userId": "string",
+  "postId": "5f4954133aae6a2348769d27",
+  "commentId": null,
+  "createdDate": 1599044708617,
+  "modificationDate": 1599044708617,
+  "nodes": [
+    {
+      "id": "5f4f7c6435be326aba6953f4",
+      "type": "TEXT",
+      "node": {
+        "content": null
+      },
+      "commentId": "string",
+      "source": "HELLO!",
+      "createdDate": 1599044708576,
+      "modificationDate": 1599044708576
+    }
+  ]
+}
+----
+
+===== 404 NOT_FOUND (RPE-004)
+
+[source,json]
+----
+{
+  "title": "CommentNotFoundException",
+  "message": "Comment by id '5f4f7c6435be326aba6953f' is not found",
+  "code": "RPE-004",
+  "trace": "com.reckue.post.exceptions.models.comment.CommentNotFoundException: Comment by id '5f4f7c6435be326aba6953f' is not found\r\n\tat..."
+}
+----
+
+=== Create a comment
+
+Adding new comment with userId, postId, comment nodes and other fields.
+
+==== Request
+
+[source,bash]
+----
+curl https://reckue.com/api/v1/comments
+HTTP method: POST
+----
+
+==== Request example:
+
+[source,json]
+----
+{
+  "commentId": null,
+  "nodes": [
+    {
+      "commentId": "string",
+      "node": {
+        "type": "TEXT"
+      },
+      "source": "string",
+      "type": "TEXT"
+    }
+  ],
+  "postId": "5f58f4b40535231d232b8e72",
+  "userId": "string"
+}
+----
+
+==== Responses
+
+===== 200 OK
+
+[source,json]
+----
+{
+  "id": "5f58f4b40535231d232b8e72",
+  "userId": "string",
+  "postId": "5f4954133aae6a2348769d27",
+  "commentId": null,
+  "createdDate": 1599665332947,
+  "modificationDate": 1599665332947,
+  "nodes": [
+    {
+      "id": "5f58f4b40535231d232b8e71",
+      "type": "TEXT",
+      "node": {
+        "content": null
+      },
+      "commentId": "string",
+      "source": "string",
+      "createdDate": 1599665332920,
+      "modificationDate": 1599665332920
+    }
+  ]
+}
+----
+
+=== Update the comment by id
+
+Updating comment by given id.
+
+==== Request
+
+[source,bash]
+----
+curl: https://reckue.com/api/v1/comments/5f3190d4e810fe1a026e7f81
+HTTP method: PUT
+----
+
+==== Request example:
+
+[source,json]
+----
+{
+  "commentId": null,
+  "nodes": [
+    {
+      "commentId": "string",
+      "node": {
+        "type": "TEXT"
+      },
+      "source": "string",
+      "type": "TEXT"
+    }
+  ],
+  "postId": "5f58f4b40535231d232b8e72",
+  "userId": "string"
+}
+----
+
+==== Responses
+
+===== 200 OK
+
+[source,json]
+----
+{
+  "id": "5f3190d4e810fe1a026e7f81",
+  "type": "TEXT",
+  "node": {
+    "content": "1234"
+  },
+  "postId": "5f3190c7e810fe1a026e7f80",
+  "source": "string",
+  "userId": "string",
+  "createdDate": 1597083860359,
+  "modificationDate": 1599588701748,
+  "status": null
+}
+----
+
+===== 404 NOT_FOUND (RPE-004)
+
+[source,json]
+----
+{
+  "title": "CommentNotFoundException",
+  "message": "Comment by id 5f3j190d4e810fe1a026e7f81 is not found",
+  "code": "RPE-004",
+  "trace": "com.reckue.post.exceptions.models.nodes.CommentNotFoundException: Comment by id 5f3j190d4e810fe1a026e7f81 is not found\n\tat  ..."
+ }
+----
+
+=== Delete the comment by id
+
+Deleting comment by given id.
+
+==== Request
+
+[source,bash]
+----
+curl https://reckue.com/api/v1/comments/5f3190d4e810fe1a026e7f81
+HTTP method: DELETE
+----
+
+==== Responses
+
+===== 200 OK
+
+===== 404 NOT_FOUND (RPE-004)
+
+[source,json]
+----
+{
+  "title": "CommentNotFoundException",
+  "message": "Comment by id 5f3j190d4e810fe1a026e7f81 is not found",
+  "code": "RPE-002",
+  "trace": "com.reckue.post.exceptions.models.nodes.CommentNotFoundException: Comment by id 5f3j190d4e810fe1a026e7f81 is not found\n\tat ..."
+ }
+----
