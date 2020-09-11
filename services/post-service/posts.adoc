@@ -149,10 +149,6 @@ Getting all posts by given tittle.
 ----
 curl https://reckue.com/api/v1/posts/title/Jaxb%20Context
 ----
-==== Request example:
-----
-Jaxb Context
-----
 
 ==== Responses
 ===== 200 OK
