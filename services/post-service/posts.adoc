@@ -103,8 +103,7 @@ curl https://reckue.com/api/v1/posts/5f3190c7e810fe1a026e7f80
 ===== 200 OK
 [source,json]
 ----
-[
-  {
+{
     "id": "5f3190c7e810fe1a026e7f80",
     "title": "Hello",
     "nodes": [
@@ -128,8 +127,7 @@ curl https://reckue.com/api/v1/posts/5f3190c7e810fe1a026e7f80
     "createdDate": 1597083847950,
     "modificationDate": 1597083866637,
     "status": "DRAFT"
-  }
- ]
+}
 ----
 
 ===== 404 NOT_FOUND (RPE-001)
