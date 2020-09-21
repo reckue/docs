@@ -25,10 +25,3 @@
 |1.0.0
 |===
 
-include::posts.adoc[]
-
-include::nodes.adoc[]
-
-include::comments.adoc[]
-
-include::tags.adoc[]
