@@ -1,0 +1,16 @@
+= Post Status Lifecycle
+
+There are 6 post status types now.
+
+1. **DRAFT** &mdash; post stored as draft and available for only author.
+2. **PUBLISHED** &mdash; post stored as published and available for all.
+3. **PENDING** &mdash; post is waiting to moderate.
+4. **MODERATED** &mdash; post stored as moderated and available for all, also has priority.
+5. **DELETED** &mdash; post stored as deleted and will be delete after N days.
+6. **BANNED** &mdash; post stored as banned and will be delete after N days.
+
+
+== Architecture
+Below is the architecture of the post status lifecycle.
+
+image::https://i.ibb.co/zNDfMQy/post-status-lifecycle.png[Post status lifecycle]
