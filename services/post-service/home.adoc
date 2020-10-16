@@ -25,3 +25,5 @@
 |1.0.0
 |===
 
+== Lifecycle
+links:post-status-lifecycle.adoc[Post Status Lifecycle]
