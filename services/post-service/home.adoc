@@ -26,4 +26,4 @@
 |===
 
 == Lifecycle
-links:post-status-lifecycle.adoc[Post Status Lifecycle]
+link:post-status-lifecycle.adoc[Post Status Lifecycle]
