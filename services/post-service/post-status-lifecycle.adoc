@@ -13,7 +13,7 @@ There are 6 post status types now.
 == Architecture
 Below is the architecture of the post status lifecycle.
 
-image::https://i.ibb.co/zNDfMQy/post-status-lifecycle.png[Post status lifecycle]
+image::https://i.ibb.co/Hp99Kqt/post-status-lifecycle.png[Post status lifecycle]
 
 
 Diagram code for draw.io is located link:files/post-status-lifecycle.xml[here]
