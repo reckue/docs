@@ -1,4 +1,4 @@
-<mxGraphModel dx="1577" dy="393" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+<mxGraphModel dx="1294" dy="304" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
   <root>
     <mxCell id="VilS_ZJCFpJp7yxlXha9-0" />
     <mxCell id="VilS_ZJCFpJp7yxlXha9-1" parent="VilS_ZJCFpJp7yxlXha9-0" />
@@ -58,7 +58,7 @@
         </Array>
       </mxGeometry>
     </mxCell>
-    <mxCell id="0dbRE3x9cXOk5x5cio2P-15" value="1. Change status to DRAFT.&lt;br&gt;2. Update modification date." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;" vertex="1" parent="VilS_ZJCFpJp7yxlXha9-1">
+    <mxCell id="0dbRE3x9cXOk5x5cio2P-15" value="1. Change status to DRAFT." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;" vertex="1" parent="VilS_ZJCFpJp7yxlXha9-1">
       <mxGeometry x="735.31" y="2115" width="166.88" height="46" as="geometry" />
     </mxCell>
     <mxCell id="0dbRE3x9cXOk5x5cio2P-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="VilS_ZJCFpJp7yxlXha9-1" source="0dbRE3x9cXOk5x5cio2P-19" target="0dbRE3x9cXOk5x5cio2P-23" treatAsSingle="0">
@@ -279,7 +279,7 @@
         </Array>
       </mxGeometry>
     </mxCell>
-    <mxCell id="0dbRE3x9cXOk5x5cio2P-61" value="1. Change status to PUBLISHED.&lt;br&gt;2. Update modification date." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;" vertex="1" parent="VilS_ZJCFpJp7yxlXha9-1">
+    <mxCell id="0dbRE3x9cXOk5x5cio2P-61" value="1. Change status to PUBLISHED." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;" vertex="1" parent="VilS_ZJCFpJp7yxlXha9-1">
       <mxGeometry x="942.88" y="2115" width="182.75" height="45" as="geometry" />
     </mxCell>
     <mxCell id="0dbRE3x9cXOk5x5cio2P-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="VilS_ZJCFpJp7yxlXha9-1" source="0dbRE3x9cXOk5x5cio2P-63" target="0dbRE3x9cXOk5x5cio2P-61">
@@ -300,7 +300,7 @@
     <mxCell id="0dbRE3x9cXOk5x5cio2P-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="VilS_ZJCFpJp7yxlXha9-1" source="0dbRE3x9cXOk5x5cio2P-68" target="0dbRE3x9cXOk5x5cio2P-69">
       <mxGeometry relative="1" as="geometry" />
     </mxCell>
-    <mxCell id="0dbRE3x9cXOk5x5cio2P-68" value="&lt;span&gt;1.Update post in database.&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;" vertex="1" parent="VilS_ZJCFpJp7yxlXha9-1">
+    <mxCell id="0dbRE3x9cXOk5x5cio2P-68" value="&lt;span&gt;1.Update post in database.&lt;br&gt;&lt;/span&gt;2. Update modification date.&lt;span&gt;&lt;br&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;" vertex="1" parent="VilS_ZJCFpJp7yxlXha9-1">
       <mxGeometry x="1335" y="2320" width="207" height="41" as="geometry" />
     </mxCell>
     <mxCell id="0dbRE3x9cXOk5x5cio2P-69" value="DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;align=center;" vertex="1" parent="VilS_ZJCFpJp7yxlXha9-1">
@@ -314,13 +314,13 @@
         </Array>
       </mxGeometry>
     </mxCell>
-    <mxCell id="0dbRE3x9cXOk5x5cio2P-71" value="&lt;span&gt;1. Change status to&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center&quot;&gt;PENDING&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;br&gt;&lt;span&gt;2. Update modification date.&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;" vertex="1" parent="VilS_ZJCFpJp7yxlXha9-1">
+    <mxCell id="0dbRE3x9cXOk5x5cio2P-71" value="&lt;span&gt;1. Change status to&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center&quot;&gt;PENDING&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;" vertex="1" parent="VilS_ZJCFpJp7yxlXha9-1">
       <mxGeometry x="1153" y="2115" width="194" height="50" as="geometry" />
     </mxCell>
     <mxCell id="0dbRE3x9cXOk5x5cio2P-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="VilS_ZJCFpJp7yxlXha9-1" source="0dbRE3x9cXOk5x5cio2P-73" target="0dbRE3x9cXOk5x5cio2P-68">
       <mxGeometry relative="1" as="geometry" />
     </mxCell>
-    <mxCell id="0dbRE3x9cXOk5x5cio2P-73" value="&lt;span&gt;1. Change status to&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center&quot;&gt;PENDING&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;br&gt;&lt;span&gt;2. Update modification date.&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;" vertex="1" parent="VilS_ZJCFpJp7yxlXha9-1">
+    <mxCell id="0dbRE3x9cXOk5x5cio2P-73" value="&lt;span&gt;1. Change status to&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center&quot;&gt;MODERATED&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;" vertex="1" parent="VilS_ZJCFpJp7yxlXha9-1">
       <mxGeometry x="1393.25" y="2112.5" width="194" height="50" as="geometry" />
     </mxCell>
     <mxCell id="0dbRE3x9cXOk5x5cio2P-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="VilS_ZJCFpJp7yxlXha9-1" source="0dbRE3x9cXOk5x5cio2P-75" target="0dbRE3x9cXOk5x5cio2P-68">
@@ -331,7 +331,7 @@
         </Array>
       </mxGeometry>
     </mxCell>
-    <mxCell id="0dbRE3x9cXOk5x5cio2P-75" value="&lt;span&gt;1. Change status to&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center&quot;&gt;PENDING&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;br&gt;&lt;span&gt;2. Update modification date.&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;" vertex="1" parent="VilS_ZJCFpJp7yxlXha9-1">
+    <mxCell id="0dbRE3x9cXOk5x5cio2P-75" value="&lt;span&gt;1. Change status to&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center&quot;&gt;PENDING&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;" vertex="1" parent="VilS_ZJCFpJp7yxlXha9-1">
       <mxGeometry x="1822.25" y="2115" width="194" height="50" as="geometry" />
     </mxCell>
   </root>
