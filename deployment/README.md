@@ -79,7 +79,7 @@ kubectl create service clusterip post --tcp=8080:8080 --dry-run -o=yaml >> deplo
 Please follow this tutorial:
 https://www.melvinvivas.com/converting-a-mongodb-docker-compose-file-to-a-kubernetes-deployment/
 
-## Step 1. Create docker-ompose.yml
+## Step 1. Create docker-compose.yml
 ```yaml
 version: '3'
 services:
