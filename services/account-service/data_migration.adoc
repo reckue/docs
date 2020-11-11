@@ -5,7 +5,9 @@ First of all add a dependency to build.gradle
 ```
 implementation 'org.liquibase:liquibase-core:4.1.1'
 ```
-For a newer version of liquibase-core go [here](https://mvnrepository.com/artifact/org.liquibase/liquibase-core).
+For a newer version of liquibase-core go:
+
+https://mvnrepository.com/artifact/org.liquibase/liquibase-core
 
 ## Step 2
 You need to create a master changelog file.
@@ -108,4 +110,6 @@ databaseChangeLog:
 Run a project. Liquibase migrations will run automatically on startup.
 
 
-For more information about another kinds of changes go to: https://docs.liquibase.com/change-types/community/create-table.html
+For more information about another kinds of changes go to: 
+
+https://docs.liquibase.com/change-types/community/create-table.html
