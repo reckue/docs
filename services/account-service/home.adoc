@@ -1,3 +1,4 @@
 = Account service
 
 - link:/services/account-service/data_migration.adoc[Data migration]
+- link:/services/account-service/how-to-get-tokens.adoc[How to get tokens]
