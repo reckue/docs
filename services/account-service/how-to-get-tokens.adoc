@@ -1,0 +1,5 @@
+# How to get tokens
+
+### TODO:
+1. Please draw microservice architecture on draw.io. And show how to get tokens for test endpoints on post-api.
+2. Add tutorial step by step with screenshots.
