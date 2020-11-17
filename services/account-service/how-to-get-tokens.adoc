@@ -13,7 +13,7 @@ Register the user:
 - Fill the form: write *email* (validation to real email), *password* (at least 6 symbols) and *username* (must be original).
 - Press `*"Execute"*`.
 
-:imagesdir: https://ibb.co/VQzvBG
+image::https://ibb.co/VQzvBG[]
 
 ### Step 3
 Receive the token:
@@ -24,14 +24,14 @@ Receive the token:
 - Press `*"Execute"*`.
 - Fill login form: *login* - clientId ("client"), *password* - clientSecret ("secret").
 
-:imagesdir: https://ibb.co/HCk6jfL
+image::https://ibb.co/HCk6jfL[]
 
 ### Step 4
 Copy access token.
 
 After completing step 3 you will receive an access token. Copy it.
 
-:imagesdir: https://ibb.co/zGdnBGM
+image::https://ibb.co/zGdnBGM[]
 
 ### Step 5
 Run the project *_"post-api"_* and go to the link: http://localhost:9002/.
@@ -39,7 +39,7 @@ Run the project *_"post-api"_* and go to the link: http://localhost:9002/.
 ### Step 6
 Press the green button `*"Authorize"*`.
 
-:imagesdir: https://ibb.co/WzT3wB5
+image::https://ibb.co/WzT3wB5[]
 
 ### Step 7
 Find the empty field *_"value"_* and write: "Bearer " (don't miss the space) and then insert your access token. Press `*"Authorize"*`.
@@ -60,7 +60,7 @@ Refresh the token:
 - Fill the form: *grant_type* - refresh_token, *refreshToken* - your user's refresh token, *scope* - write.
 - Press `*"Execute"*`.
 
-:imagesdir: https://ibb.co/TB2cDJx
+image::https://ibb.co/TB2cDJx[]
 
 ## The way to get token using Postman
 
@@ -71,6 +71,6 @@ Run the project and go to the Postman.
 - Fill the field *_"Authorization"_* (username - clientId ("client"), password - clientSecret ("secret")).
 - Press `*"Send"*`.
 
-:imagesdir: https://ibb.co/4PF1cY5
+image::https://ibb.co/4PF1cY5[]
 
 
