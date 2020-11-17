@@ -13,7 +13,7 @@ Register the user:
 - Fill the form: write *email* (validation to real email), *password* (at least 6 symbols) and *username* (must be original).
 - Press `*"Execute"*`.
 
-image::https://ibb.co/VQzvBG[]
+image::https://i.ibb.co/nr2bt5K/2020-11-17-23-12-32.png[]
 
 ### Step 3
 Receive the token:
@@ -24,14 +24,14 @@ Receive the token:
 - Press `*"Execute"*`.
 - Fill login form: *login* - clientId ("client"), *password* - clientSecret ("secret").
 
-image::https://ibb.co/HCk6jfL[]
+image::https://i.ibb.co/tzWg9Tw/2020-11-17-20-40-43.png[]
 
 ### Step 4
 Copy access token.
 
 After completing step 3 you will receive an access token. Copy it.
 
-image::https://ibb.co/zGdnBGM[]
+image::https://i.ibb.co/XSH2KSQ/2020-11-17-20-45-32.png[]
 
 ### Step 5
 Run the project *_"post-api"_* and go to the link: http://localhost:9002/.
@@ -39,7 +39,7 @@ Run the project *_"post-api"_* and go to the link: http://localhost:9002/.
 ### Step 6
 Press the green button `*"Authorize"*`.
 
-image::https://ibb.co/WzT3wB5[]
+image::https://i.ibb.co/5j79ys4/2020-11-17-20-49-46.png[]
 
 ### Step 7
 Find the empty field *_"value"_* and write: "Bearer " (don't miss the space) and then insert your access token. Press `*"Authorize"*`.
@@ -60,7 +60,7 @@ Refresh the token:
 - Fill the form: *grant_type* - refresh_token, *refreshToken* - your user's refresh token, *scope* - write.
 - Press `*"Execute"*`.
 
-image::https://ibb.co/TB2cDJx[]
+image::https://i.ibb.co/mCTJrdV/2020-11-17-21-35-18.png[]
 
 ## The way to get token using Postman
 
@@ -71,6 +71,6 @@ Run the project and go to the Postman.
 - Fill the field *_"Authorization"_* (username - clientId ("client"), password - clientSecret ("secret")).
 - Press `*"Send"*`.
 
-image::https://ibb.co/4PF1cY5[]
+image::https://i.ibb.co/9spZJVC/2020-11-17-21-47-26.png[]
 
 
