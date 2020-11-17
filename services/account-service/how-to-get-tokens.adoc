@@ -13,7 +13,7 @@ Register the user:
 - Fill the form: write *email* (validation to real email), *password* (at least 6 symbols) and *username* (must be original).
 - Press `*"Execute"*`.
 
-image::https://i.ibb.co/nr2bt5K/2020-11-17-23-12-32.png[]
+image::https://i.ibb.co/y4S0V8n/2020-11-17-23-19-19.png[]
 
 ### Step 3
 Receive the token:
