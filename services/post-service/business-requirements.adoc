@@ -3,14 +3,26 @@
 === Service
 * [ ] can authorize users and guests.
 * [ ] store comments, posts and nodes.
-* [ ] everyone post have raiting.
-* [ ] everyone node have raiting?
-* [ ] everyone comment have raiting?
+
+=== Post
+* [ ] have a raiting.
+* [ ] can be reported.
+* [ ] have a privacy levels (Post Life Cycle)
+
+=== Comment
+* [ ] have a raiting.
+* [ ] can be reported.
+
+=== Node
+* [ ] have a raiting? (dont know it yet?)
+* [ ] have a privacy levels?
 
 === Guests
 * [ ] can use service in read-only mode without tokens.
+* [ ] can report about something in post.
 
 === Users
+* [ ] can everything that can Guests.
 * [ ] can create, edit and delete their our posts. 
 * [ ] can look at rating and raise it for selected posts.
 * [ ] can add comment at post or another comment.
