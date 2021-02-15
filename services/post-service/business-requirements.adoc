@@ -1,13 +1,11 @@
 = Minimal business requirements
 
-== Authorization
-
 === Service
 * [ ] can authorize users and guests.
-* [ ] store posts as list of nodes.
-* [ ] store comments as nodes with type comment?
+* [ ] store comments, posts and nodes.
 * [ ] everyone post have raiting.
 * [ ] everyone node have raiting?
+* [ ] everyone comment have raiting?
 
 === Guests
 * [ ] can use service in read-only mode without tokens.
@@ -15,3 +13,4 @@
 === Users
 * [ ] can create, edit and delete their our posts. 
 * [ ] can look at rating and raise it for selected posts.
+* [ ] can add comment at post or another comment.
