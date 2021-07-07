@@ -1,1 +1,160 @@
 == Tags
+
+=== Get all tags
+Getting tags which filtering by limit, offset, sort and desc parameters.
+
+==== Request
+[source,bash]
+----
+curl -X GET "http://localhost:9002/tags?desc=false&limit=10&offset=0&sort=id" -H "accept: */*"
+----
+
+[%header,cols=3*]
+|===
+|Parameter
+|Description
+|Since
+
+|```limit```
+|Limit of tags. By default, 10.
+|1.0.0
+
+|```offset```
+|Offset of tags. By default, 0.
+|1.0.0
+
+|```desc```
+|Sorting by descending or ascending order. By default false.
+|1.0.0
+
+|```sort```
+|Sorting by field name (name, id). By default, id.
+|1.0.0
+|===
+
+==== Responses
+===== 200 OK
+[source,json]
+----
+[
+  {
+    "id": "5f594155645b4360f0aca253",
+    "name": "Hello"
+  },
+  {
+    "id": "5f5bb735cff02b473b87de58",
+    "name": "Hello"
+  },
+  {
+    "id": "5f5bb74fcff02b473b87de59",
+    "name": "Hello2"
+  }
+]
+----
+
+=== Get a tag by id
+Getting tag by the given id.
+
+==== Request
+[source,bash]
+----
+curl -X GET "http://localhost:9002/tags/5f5bb74fcff02b473b87de59" -H "accept: */*"
+----
+
+==== Responses
+===== 200 OK
+[source,json]
+----
+{
+  "id": "5f5bb74fcff02b473b87de59",
+  "name": "Hello2"
+}
+----
+
+===== 404 NOT_FOUND (RPE-003)
+[source,json]
+----
+{
+  "title": "TagNotFoundException",
+  "message": "Tag by id '5f5bb74fcff02b473b87de50' is not found",
+  "code": "RPE-003",
+  "trace": "com.reckue.post.exceptions.models.tag.TagNotFoundException: Tag by id '5f5bb74fcff02b473b87de50' is not found\n\tat ..."
+ }
+----
+
+=== Create a tag
+Adding new tag with name field.
+
+==== Request
+[source,bash]
+----
+curl -X POST "http://localhost:9002/tags" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"name\": \"Thank you!\"}"
+----
+
+==== Request example:
+[source,json]
+----
+{
+  "name": "Thank you!"
+}
+----
+==== Responses
+===== 200 OK
+[source,json]
+----
+{
+  "id": "5f60fbd58a2cf830b805d6d9",
+  "name": "Thank you!"
+}
+----
+
+=== Update the tag by id
+Updating tag by given id.
+
+==== Request
+[source,bash]
+----
+curl -X PUT "http://localhost:9002/tags/5f60fbd58a2cf830b805d6d9" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"name\": \"Thank's!\"}"
+----
+==== Responses
+===== 200 OK
+[source,json]
+----
+{
+  "id": "5f60fbd58a2cf830b805d6d9",
+  "name": "Thank's!"
+}
+----
+===== 404 NOT_FOUND (RPE-003)
+[source,json]
+----
+{
+  "title": "TagNotFoundException",
+  "message": "Tag by id '5f60fbd58a2cf830b805d6d0' is not found",
+  "code": "RPE-003",
+  "trace": "com.reckue.post.exceptions.models.tag.TagNotFoundException: Tag by id '5f60fbd58a2cf830b805d6d0' is not found\n\tat ..."
+ }
+----
+
+=== Delete the tag by id
+Deleting tag by given id.
+
+==== Request
+[source,bash]
+----
+curl -X DELETE "http://localhost:9002/tags/5f60fbd58a2cf830b805d6d9" -H "accept: */*"
+----
+
+==== Responses
+===== 200 OK
+
+===== 404 NOT_FOUND (RPE-003)
+[source,json]
+----
+{
+  "title": "TagNotFoundException",
+  "message": "Tag by id '5f60fbd58a2cf830b805d6d0' is not found",
+  "code": "RPE-003",
+  "trace": "com.reckue.post.exceptions.models.tag.TagNotFoundException: Tag by id '5f60fbd58a2cf830b805d6d0' is not found\n\tat ..."
+ }
+----
